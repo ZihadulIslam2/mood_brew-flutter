@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:mood_brew/screens/home_screen.dart';
 
-void main () {
-  runApp( const MoodBrewApp());
+void main() {
+  runApp(const MoodBrewApp());
 }
 
 class MoodBrewApp extends StatelessWidget {
-  const MoodBrewApp({ super.key })
+  const MoodBrewApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -18,8 +19,8 @@ class MoodBrewApp extends StatelessWidget {
           bodyMedium: TextStyle(fontFamily: 'Roboto', color: Colors.brown),
         ),
       ),
-    home: const HomeScreen(),
-    debugShowCheckedModeBanner: false,
+      home: const HomeScreen(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
